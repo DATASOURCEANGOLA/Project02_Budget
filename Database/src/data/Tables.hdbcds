@@ -1,0 +1,26 @@
+namespace TECHED__02.Database.data;
+
+context Tables {
+
+    /*@@layout{"layoutInfo":{}}*/
+    entity Despesas {
+        key id       : Integer;
+            item     : String(50);
+            data     : UTCDateTime;
+            montante : Decimal(10, 2);
+    };
+
+    /*@@layout{"layoutInfo":{}}*/
+    entity Poupancas {
+        key id       : Integer;
+            data     : UTCDateTime;
+            montante : Decimal(10, 2);
+    };
+
+    /*@@layout{"layoutInfo":{}}*/
+    entity Rendimentos {
+        key id       : Integer;
+            item     : String(10);
+            montante : Decimal(10, 2);
+    };
+};

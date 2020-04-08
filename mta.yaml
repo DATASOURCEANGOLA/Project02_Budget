@@ -1,0 +1,16 @@
+ID: TECHED__02
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: Database
+   type: hdb
+   path: Database
+   requires:
+    - name: hdi_Database
+
+resources:
+ - name: hdi_Database
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
